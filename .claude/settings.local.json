@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:webgazer.cs.brown.edu)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:gist.github.com)",
+      "Bash(curl:*)",
+      "Bash(kill:*)",
+      "Bash(python3 -m http.server:*)",
+      "Bash(open:*)",
+      "Bash(lsof:*)"
+    ]
+  }
+}

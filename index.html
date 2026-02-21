@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fishy - Face Tracking Fish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landing">
+    <h1>Fishy</h1>
+    <p>A little fish that follows your eyes and reacts to your face</p>
+    <button id="startBtn">Start Playing</button>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div id="loading" class="hidden">
+    <div class="spinner"></div>
+    <p>Loading fish brain...</p>
+  </div>
+
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Camera Preview -->
+  <video id="camera" autoplay playsinline></video>
+
+  <!-- Hints Overlay -->
+  <div id="hints" class="hidden">
+    <div class="hint-box">
+      <p>Look around to guide the fish</p>
+      <p>Open &amp; close your mouth like a fish to make it happy</p>
+      <p>Raise eyebrows, smile, wink, or puff cheeks!</p>
+    </div>
+  </div>
+
+  <!-- Error Overlay -->
+  <div id="error" class="hidden">
+    <p id="errorMsg"></p>
+  </div>
+
+  <!-- No Face Warning -->
+  <div id="noFace" class="hidden">
+    <p>I can't see you! Make sure your face is visible.</p>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
